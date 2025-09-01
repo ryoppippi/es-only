@@ -6,6 +6,10 @@
     "./bun": {
       "bun": "./src/bun.ts",
       "default": "./src/bun.error.js"
+    },
+    "./deno": {
+      "deno": "./src/deno.ts",
+      "default": "./src/deno.error.js"
     }
   },
   "devDependencies": {

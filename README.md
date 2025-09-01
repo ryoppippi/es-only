@@ -17,3 +17,9 @@ import "es-only/deno";
 console.log(Deno.version);
 ```
 
+## Inspired by
+
+- [esm-env](https://www.npmjs.com/package/esm-env)
+- [server-only](https://www.npmjs.com/package/server-only)
+- [bun-only](https://www.npmjs.com/package/bun-only)
+

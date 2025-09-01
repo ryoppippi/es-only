@@ -1,6 +1,13 @@
 {
   "name": "es-only",
   "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./bun": {
+      "bun": "./src/bun.ts",
+      "default": "./src/bun.error.js"
+    }
+  },
   "devDependencies": {
     "@types/bun": "latest"
   }

@@ -1,6 +1,7 @@
 {
   "name": "es-only",
   "version": "0.0.0",
+  "description": "Runtime-specific imports for modern JavaScript environments - Bun, Deno, Node.js, server-only, and more",
   "type": "module",
   "exports": {
     "./bun": {

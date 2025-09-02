@@ -17,6 +17,14 @@ import "es-only/deno";
 console.log(Deno.version);
 ```
 
+## node
+
+```ts
+import "es-only/node";
+
+console.log(process.version);
+```
+
 ## server-only
 
 ```ts

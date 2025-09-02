@@ -12,6 +12,10 @@
       "deno": "./src/empty.js",
       "default": "./src/deno.error.js"
     },
+    "./node": {
+      "node": "./src/empty.js",
+      "default": "./src/node.error.js"
+    },
     "./server-only": {
       "react-server": "./src/empty.js",
       "default": "./src/server-only.error.js"

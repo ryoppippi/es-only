@@ -1,51 +1,52 @@
 {
-  "name": "es-only",
-  "version": "0.0.0",
-  "description": "Runtime-specific imports for modern JavaScript environments - Bun, Deno, Node.js, server-only, and more",
-  "type": "module",
-  "exports": {
-    "./browser": {
-      "browser": "./src/empty.js",
-      "default": "./src/browser.error.js"
-    },
-    "./bun": {
-      "bun": "./src/empty.js",
-      "default": "./src/bun.error.js"
-    },
-    "./deno": {
-      "deno": "./src/empty.js",
-      "default": "./src/deno.error.js"
-    },
-    "./node": {
-      "node": "./src/empty.js",
-      "default": "./src/node.error.js"
-    },
-    "./server-only": {
-      "react-server": "./src/empty.js",
-      "default": "./src/server-only.error.js"
-    }
-  },
-  "scripts": {
-    "format": "bun run lint --fix",
-    "lint": "eslint --cache .",
-    "prepare": "git config --local core.hooksPath .githooks",
-    "release": "bun lint && bun typecheck && bumpp",
-    "typecheck": "tsgo --noEmit"
-  },
-  "lint-staged": {
-    "*": [
-      "eslint --cache --fix"
-    ],
-    "package.json": [
-      "sort-package-json"
-    ]
-  },
-  "devDependencies": {
-    "@ryoppippi/eslint-config": "^0.3.7",
-    "@types/bun": "latest",
-    "bumpp": "^10.2.3",
-    "eslint": "^9.33.0",
-    "lint-staged": "^16.1.5",
-    "sort-package-json": "^3.4.0"
-  }
+	"name": "es-only",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Runtime-specific imports for modern JavaScript environments - Bun, Deno, Node.js, server-only, and more",
+	"exports": {
+		"./browser": {
+			"browser": "./src/empty.js",
+			"default": "./src/browser.error.js"
+		},
+		"./bun": {
+			"bun": "./src/empty.js",
+			"default": "./src/bun.error.js"
+		},
+		"./deno": {
+			"deno": "./src/empty.js",
+			"default": "./src/deno.error.js"
+		},
+		"./node": {
+			"node": "./src/empty.js",
+			"default": "./src/node.error.js"
+		},
+		"./server-only": {
+			"react-server": "./src/empty.js",
+			"default": "./src/server-only.error.js"
+		}
+	},
+	"scripts": {
+		"format": "bun run lint --fix",
+		"lint": "eslint --cache .",
+		"prepare": "git config --local core.hooksPath .githooks",
+		"release": "bun lint && bun typecheck && bumpp",
+		"typecheck": "tsgo --noEmit"
+	},
+	"devDependencies": {
+		"@ryoppippi/eslint-config": "^0.3.7",
+		"@types/bun": "latest",
+		"bumpp": "^10.2.3",
+		"eslint": "^9.33.0",
+		"eslint-plugin-format": "^1.0.1",
+		"lint-staged": "^16.1.5",
+		"sort-package-json": "^3.4.0"
+	},
+	"lint-staged": {
+		"*": [
+			"eslint --cache --fix"
+		],
+		"package.json": [
+			"sort-package-json"
+		]
+	}
 }

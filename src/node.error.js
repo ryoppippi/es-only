@@ -1,1 +1,1 @@
-throw new Error("This module must be used with Node.js.");
+throw new Error('This module must be used with Node.js.');

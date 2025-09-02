@@ -9,8 +9,9 @@ This is `es-only`, a lightweight utility library that provides runtime-specific 
 ## Architecture
 
 The core architecture is based on **conditional exports** in `package.json`:
+
 - Each environment (`browser`, `bun`, `deno`, `node`, `server-only`) has two possible imports:
-  - Target environment: `src/empty.js` (no-op)  
+  - Target environment: `src/empty.js` (no-op)
   - Other environments: `src/{environment}.error.js` (throws error)
 
 ### Key Files
@@ -48,6 +49,7 @@ bun run release           # Runs lint + typecheck + bumpp for version bumping
 ## Testing Strategy
 
 There are currently no automated tests. Testing is done by:
+
 1. Importing modules in different JavaScript runtimes
 2. Verifying correct behavior (empty import vs error throwing)
 3. Manual verification across Browser/Bun/Deno/Node.js environments

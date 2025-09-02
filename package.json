@@ -5,15 +5,15 @@
   "type": "module",
   "exports": {
     "./bun": {
-      "bun": "./src/bun.ts",
+      "bun": "./src/empty.js",
       "default": "./src/bun.error.js"
     },
     "./deno": {
-      "deno": "./src/deno.ts",
+      "deno": "./src/empty.js",
       "default": "./src/deno.error.js"
     },
     "./server-only": {
-      "react-server": "./src/server-only.js",
+      "react-server": "./src/empty.js",
       "default": "./src/server-only.error.js"
     }
   },

@@ -3,6 +3,17 @@
 	"type": "module",
 	"version": "0.0.0",
 	"description": "Runtime-specific imports for modern JavaScript environments - Bun, Deno, Node.js, server-only, and more",
+	"author": "ryoppippi",
+	"license": "MIT",
+	"funding": "https://github.com/ryoppippi/es-only?sponsor=1",
+	"homepage": "https://github.com/ryoppippi/es-only#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ryoppippi/es-only.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ryoppippi/es-only/issues"
+	},
 	"exports": {
 		"./browser": {
 			"browser": "./src/empty.js",

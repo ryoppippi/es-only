@@ -17,6 +17,15 @@ import "es-only/deno";
 console.log(Deno.version);
 ```
 
+## server-only
+
+```ts
+import "es-only/server-only";
+
+// This module can only be used in Server Components
+// It will throw an error if imported from Client Components
+```
+
 ## Inspired by
 
 - [esm-env](https://www.npmjs.com/package/esm-env)

@@ -11,6 +11,10 @@
     "./deno": {
       "deno": "./src/deno.ts",
       "default": "./src/deno.error.js"
+    },
+    "./server-only": {
+      "react-server": "./src/server-only.js",
+      "default": "./src/server-only.error.js"
     }
   },
   "devDependencies": {

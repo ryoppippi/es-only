@@ -4,6 +4,10 @@
   "description": "Runtime-specific imports for modern JavaScript environments - Bun, Deno, Node.js, server-only, and more",
   "type": "module",
   "exports": {
+    "./browser": {
+      "browser": "./src/empty.js",
+      "default": "./src/browser.error.js"
+    },
     "./bun": {
       "bun": "./src/empty.js",
       "default": "./src/bun.error.js"

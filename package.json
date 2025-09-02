@@ -25,7 +25,27 @@
       "default": "./src/server-only.error.js"
     }
   },
+  "scripts": {
+    "format": "bun run lint --fix",
+    "lint": "eslint --cache .",
+    "prepare": "git config --local core.hooksPath .githooks",
+    "release": "bun lint && bun typecheck && bumpp",
+    "typecheck": "tsgo --noEmit"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --cache --fix"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@ryoppippi/eslint-config": "^0.3.7",
+    "@types/bun": "latest",
+    "bumpp": "^10.2.3",
+    "eslint": "^9.33.0",
+    "lint-staged": "^16.1.5",
+    "sort-package-json": "^3.4.0"
   }
 }

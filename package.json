@@ -1,7 +1,7 @@
 {
 	"name": "es-only",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Runtime-specific imports for modern JavaScript environments - Bun, Deno, Node.js, server-only, and more",
 	"author": "ryoppippi",
 	"license": "MIT",

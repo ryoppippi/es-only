@@ -39,6 +39,7 @@
 	"scripts": {
 		"format": "bun run lint --fix",
 		"lint": "publint && eslint --cache .",
+		"prepack": "bun clean-pkg-json -r scripts.preinstall",
 		"prepare": "git config --local core.hooksPath .githooks",
 		"release": "bun lint && bumpp"
 	},
@@ -46,6 +47,7 @@
 		"@ryoppippi/eslint-config": "^0.3.7",
 		"@types/bun": "latest",
 		"bumpp": "^10.2.3",
+		"clean-pkg-json": "^1.3.0",
 		"eslint": "^9.33.0",
 		"eslint-plugin-format": "^1.0.1",
 		"lint-staged": "^16.1.5",

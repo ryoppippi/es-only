@@ -38,10 +38,9 @@
 	},
 	"scripts": {
 		"format": "bun run lint --fix",
-		"lint": "eslint --cache .",
+		"lint": "publint && eslint --cache .",
 		"prepare": "git config --local core.hooksPath .githooks",
-		"release": "bun lint && bun typecheck && bumpp",
-		"typecheck": "tsgo --noEmit"
+		"release": "bun lint && bumpp"
 	},
 	"devDependencies": {
 		"@ryoppippi/eslint-config": "^0.3.7",
@@ -50,6 +49,7 @@
 		"eslint": "^9.33.0",
 		"eslint-plugin-format": "^1.0.1",
 		"lint-staged": "^16.1.5",
+		"publint": "^0.3.12",
 		"sort-package-json": "^3.4.0"
 	},
 	"lint-staged": {

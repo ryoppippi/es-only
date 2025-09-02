@@ -1,6 +1,18 @@
 # es-only
 
-## browser
+Runtime-specific imports for modern JavaScript environments.
+
+## Installation
+
+```bash
+npm install es-only
+```
+
+## Usage
+
+Import the environment-specific module to ensure your code only runs in the intended environment:
+
+### browser
 
 ```ts
 import 'es-only/browser';
@@ -8,7 +20,7 @@ import 'es-only/browser';
 console.log(window.location.href);
 ```
 
-## bun
+### bun
 
 ```ts
 import 'es-only/bun';
@@ -16,7 +28,7 @@ import 'es-only/bun';
 console.log(Bun.version);
 ```
 
-## deno
+### deno
 
 ```ts
 import 'es-only/deno';
@@ -24,7 +36,7 @@ import 'es-only/deno';
 console.log(Deno.version);
 ```
 
-## node
+### node
 
 ```ts
 import 'es-only/node';
@@ -32,7 +44,7 @@ import 'es-only/node';
 console.log(process.version);
 ```
 
-## server-only
+### server-only
 
 ```ts
 import 'es-only/server-only';
@@ -40,6 +52,10 @@ import 'es-only/server-only';
 // This module can only be used in Server Components
 // It will throw an error if imported from Client Components
 ```
+
+## How it works
+
+Each import uses conditional exports to either do nothing (when running in the correct environment) or throw a runtime error (when running in the wrong environment).
 
 ## Inspired by
 

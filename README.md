@@ -1,6 +1,14 @@
 # es-only
 
 
+## browser
+
+```ts
+import "es-only/browser";
+
+console.log(window.location.href);
+```
+
 ## bun
 
 ```ts

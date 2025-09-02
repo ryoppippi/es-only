@@ -36,6 +36,11 @@
 			"default": "./src/server-only.error.js"
 		}
 	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"src"
+	],
 	"scripts": {
 		"format": "bun run lint --fix",
 		"lint": "publint && eslint --cache .",

@@ -52,7 +52,7 @@
 		"@ryoppippi/eslint-config": "^0.4.0",
 		"@types/bun": "latest",
 		"bumpp": "^11.0.1",
-		"clean-pkg-json": "^1.4.1",
+		"clean-pkg-json": "^1.4.2",
 		"eslint": "^9.39.4",
 		"eslint-plugin-format": "^2.0.1",
 		"lint-staged": "^16.4.0",

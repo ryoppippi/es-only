@@ -51,7 +51,7 @@
 	"devDependencies": {
 		"@ryoppippi/eslint-config": "^0.4.0",
 		"@types/bun": "latest",
-		"bumpp": "^11.0.1",
+		"bumpp": "^11.1.0",
 		"clean-pkg-json": "^1.4.2",
 		"eslint": "^9.39.4",
 		"eslint-plugin-format": "^2.0.1",

@@ -10,7 +10,7 @@
         "clean-pkg-json": "^1.4.2",
         "eslint": "^9.39.4",
         "eslint-plugin-format": "^2.0.1",
-        "lint-staged": "^17.0.4",
+        "lint-staged": "^17.0.5",
         "publint": "^0.3.21",
         "sort-package-json": "^3.6.1",
       },

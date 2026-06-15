@@ -7,7 +7,7 @@
         "@ryoppippi/eslint-config": "^0.4.0",
         "@types/bun": "latest",
         "bumpp": "^11.1.0",
-        "clean-pkg-json": "^1.4.2",
+        "clean-pkg-json": "^2.0.0",
         "eslint": "^9.39.4",
         "eslint-plugin-format": "^2.0.1",
         "lint-staged": "^17.0.7",
@@ -231,7 +231,7 @@
 
     "ci-info": ["ci-info@4.3.0", "", {}, "sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ=="],
 
-    "clean-pkg-json": ["clean-pkg-json@1.4.2", "", { "bin": { "clean-pkg-json": "dist/index.mjs" } }, "sha512-o201s9wWOYoZSRui4QyARSFc3n0IcYDu62hkJCQGX1eshSSQ/90QhS/KveWp/QlXSqcF/g/q2+IINj25V1BMKw=="],
+    "clean-pkg-json": ["clean-pkg-json@2.0.0", "", { "bin": { "clean-pkg-json": "dist/index.mjs" } }, "sha512-HfgaeXf7xc2xEg28rKAb6iJ7KaBU6Bu1F+wefBUEm142fYvnn+dKuBg2WEwjv7hIs1S4tu/qdLK9wek03OolBQ=="],
 
     "clean-regexp": ["clean-regexp@1.0.0", "", { "dependencies": { "escape-string-regexp": "^1.0.5" } }, "sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw=="],
 

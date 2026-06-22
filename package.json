@@ -57,7 +57,7 @@
 		"eslint-plugin-format": "^2.0.1",
 		"lint-staged": "^17.0.7",
 		"publint": "^0.3.21",
-		"sort-package-json": "^3.7.1"
+		"sort-package-json": "^4.0.0"
 	},
 	"lint-staged": {
 		"*": [

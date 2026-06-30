@@ -53,7 +53,7 @@
 		"@types/bun": "latest",
 		"bumpp": "^11.1.0",
 		"clean-pkg-json": "^2.0.0",
-		"eslint": "^9.39.4",
+		"eslint": "^10.6.0",
 		"eslint-plugin-format": "^2.0.1",
 		"lint-staged": "^17.0.7",
 		"publint": "^0.3.21",
